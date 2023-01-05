@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.2.19)  19 FEB 2021 07:12
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.2.19)  5 JAN 2023 11:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1325,9 +1325,9 @@ Overfull \hbox (27.1171pt too wide) in paragraph at lines 103--103
  []
 
 ! You can't use `macro parameter character #' in horizontal mode.
-<argument> ...per -> LMTS} (React, Typescript, C##
+<argument> ... LMTS} (React, Typescript, Java, C##
                                                   , Qt, C++) \begin {itemize...
-l.124 }
+l.125 }
        
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1335,13 +1335,13 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--176
+Underfull \hbox (badness 10000) in paragraph at lines 111--177
 
  []
 
 [1
 
-]
+] [2]
 File: img/5stars.png Graphic file (type bmp)
 <img/5stars.png>
 File: img/4stars.png Graphic file (type bmp)
@@ -1353,32 +1353,32 @@ File: img/5stars.png Graphic file (type bmp)
 File: img/4stars.png Graphic file (type bmp)
 <img/4stars.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--252
+Underfull \hbox (badness 10000) in paragraph at lines 201--253
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--261
+Underfull \hbox (badness 10000) in paragraph at lines 255--262
 
  []
 
 
-Overfull \hbox (13.96275pt too wide) in paragraph at lines 271--272
+Overfull \hbox (13.96275pt too wide) in paragraph at lines 272--273
 []\TU/texgyreheros-regular.otf(1)/m/n/10 Codility Certification: []https://codi
 lity.com/cert/view/cert6AG9RU-X7CHVB5QVHFTSAZ4/[] 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 285--289
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 286--290
 
  []
 
-[3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
+[4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
  (./cv.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 296.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 297.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 297.
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'cv.run.xml'.
@@ -1388,10 +1388,10 @@ Package logreq Info: Writing requests to 'cv.run.xml'.
 Here is how much of TeX's memory you used:
  35127 strings out of 481761
  699284 string characters out of 5936735
- 1507991 words of memory out of 5000000
+ 1508992 words of memory out of 5000000
  51589 multiletter control sequences out of 15000+600000
  533742 words of font info for 70 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  68i,9n,109p,812b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on cv.pdf (3 pages).
+Output written on cv.pdf (4 pages).
