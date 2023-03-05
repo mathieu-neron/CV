@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.2.19)  11 FEB 2023 20:42
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.2.19)  4 MAR 2023 22:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1352,23 +1352,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--261
 
  []
 
-
-Overfull \hbox (13.96275pt too wide) in paragraph at lines 271--272
-[]\TU/texgyreheros-regular.otf(1)/m/n/10 Codility Certification: []https://codi
-lity.com/cert/view/cert6AG9RU-X7CHVB5QVHFTSAZ4/[] 
- []
-
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 285--289
+Underfull \hbox (badness 10000) in paragraph at lines 284--288
 
  []
 
 [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 295.
  (./cv.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 296.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 295.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'cv.run.xml'.
