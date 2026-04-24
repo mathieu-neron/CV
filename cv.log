@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  10 JAN 2026 19:16
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  10 JAN 2026 20:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -557,27 +557,765 @@ Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
 ))
 \c@colorCounter=\count318
 
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/textpos/textpos.sty
+Package: textpos 2022/07/23 v1.10.1
+Package textpos Info: choosing support for LaTeX3 on input line 60.
+\TP@textbox=\box66
+\TP@holdbox=\box67
+\TPHorizModule=\dimen262
+\TPVertModule=\dimen263
+\TP@margin=\dimen264
+\TP@absmargin=\dimen265
 
-! LaTeX Error: File `textpos.sty' not found.
+Grid set 16 x 16 = 38.39343pt x 49.68562pt
+\TPboxrulesize=\dimen266
+\TP@ox=\dimen267
+\TP@oy=\dimen268
+\TP@tbargs=\toks35
+TextBlockOrigin set to 0pt x 0pt
+) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.209 \setlength
-                {\TPHorizModule}{1cm}^^M
-*** (cannot \read from terminal in nonstop modes)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count319
 
- 
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip19
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count320
+\c@listtotal=\count321
+\c@listcount=\count322
+\c@liststart=\count323
+\c@liststop=\count324
+\c@citecount=\count325
+\c@citetotal=\count326
+\c@multicitecount=\count327
+\c@multicitetotal=\count328
+\c@instcount=\count329
+\c@maxnames=\count330
+\c@minnames=\count331
+\c@maxitems=\count332
+\c@minitems=\count333
+\c@citecounter=\count334
+\c@maxcitecounter=\count335
+\c@savedcitecounter=\count336
+\c@uniquelist=\count337
+\c@uniquename=\count338
+\c@refsection=\count339
+\c@refsegment=\count340
+\c@maxextratitle=\count341
+\c@maxextratitleyear=\count342
+\c@maxextraname=\count343
+\c@maxextradate=\count344
+\c@maxextraalpha=\count345
+\c@abbrvpenalty=\count346
+\c@highnamepenalty=\count347
+\c@lownamepenalty=\count348
+\c@maxparens=\count349
+\c@parenlevel=\count350
+\blx@tempcnta=\count351
+\blx@tempcntb=\count352
+\blx@tempcntc=\count353
+\c@blx@maxsection=\count354
+\blx@maxsegment@0=\count355
+\blx@notetype=\count356
+\blx@parenlevel@text=\count357
+\blx@parenlevel@foot=\count358
+\blx@sectionciteorder@0=\count359
+\blx@sectionciteorderinternal@0=\count360
+\blx@entrysetcounter=\count361
+\blx@biblioinstance=\count362
+\labelnumberwidth=\skip54
+\labelalphawidth=\skip55
+\biblabelsep=\skip56
+\bibitemsep=\skip57
+\bibnamesep=\skip58
+\bibinitsep=\skip59
+\bibparsep=\skip60
+\bibhang=\skip61
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\blx@langwohyphens=\language23
+\c@mincomprange=\count363
+\c@maxcomprange=\count364
+\c@mincompwidth=\count365
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'verbose.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count366
+\c@savedafterword=\count367
+\c@annotator=\count368
+\c@savedannotator=\count369
+\c@author=\count370
+\c@savedauthor=\count371
+\c@bookauthor=\count372
+\c@savedbookauthor=\count373
+\c@commentator=\count374
+\c@savedcommentator=\count375
+\c@editor=\count376
+\c@savededitor=\count377
+\c@editora=\count378
+\c@savededitora=\count379
+\c@editorb=\count380
+\c@savededitorb=\count381
+\c@editorc=\count382
+\c@savededitorc=\count383
+\c@foreword=\count384
+\c@savedforeword=\count385
+\c@holder=\count386
+\c@savedholder=\count387
+\c@introduction=\count388
+\c@savedintroduction=\count389
+\c@namea=\count390
+\c@savednamea=\count391
+\c@nameb=\count392
+\c@savednameb=\count393
+\c@namec=\count394
+\c@savednamec=\count395
+\c@translator=\count396
+\c@savedtranslator=\count397
+\c@shortauthor=\count398
+\c@savedshortauthor=\count399
+\c@shorteditor=\count400
+\c@savedshorteditor=\count401
+\c@labelname=\count402
+\c@savedlabelname=\count403
+\c@institution=\count404
+\c@savedinstitution=\count405
+\c@lista=\count406
+\c@savedlista=\count407
+\c@listb=\count408
+\c@savedlistb=\count409
+\c@listc=\count410
+\c@savedlistc=\count411
+\c@listd=\count412
+\c@savedlistd=\count413
+\c@liste=\count414
+\c@savedliste=\count415
+\c@listf=\count416
+\c@savedlistf=\count417
+\c@location=\count418
+\c@savedlocation=\count419
+\c@organization=\count420
+\c@savedorganization=\count421
+\c@origlocation=\count422
+\c@savedoriglocation=\count423
+\c@origpublisher=\count424
+\c@savedorigpublisher=\count425
+\c@publisher=\count426
+\c@savedpublisher=\count427
+\c@language=\count428
+\c@savedlanguage=\count429
+\c@origlanguage=\count430
+\c@savedoriglanguage=\count431
+\c@pageref=\count432
+\c@savedpageref=\count433
+\shorthandwidth=\skip62
+\shortjournalwidth=\skip63
+\shortserieswidth=\skip64
+\shorttitlewidth=\skip65
+\shortauthorwidth=\skip66
+\shorteditorwidth=\skip67
+\locallabelnumberwidth=\skip68
+\locallabelalphawidth=\skip69
+\localshorthandwidth=\skip70
+\localshortjournalwidth=\skip71
+\localshortserieswidth=\skip72
+\localshorttitlewidth=\skip73
+\localshortauthorwidth=\skip74
+\localshorteditorwidth=\skip75
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/biblatex/blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+\c@textcitecount=\count434
+\c@textcitetotal=\count435
+\c@textcitemaxnames=\count436
+\c@biburlbigbreakpenalty=\count437
+\c@biburlbreakpenalty=\count438
+\c@biburlnumpenalty=\count439
+\c@biburlucpenalty=\count440
+\c@biburllcpenalty=\count441
+\biburlbigskip=\muskip20
+\biburlnumskip=\muskip21
+\biburlucskip=\muskip22
+\biburllcskip=\muskip23
+\c@smartand=\count442
+)
+Package biblatex Info: Trying to load bibliography style 'verbose'...
+Package biblatex Info: ... file 'verbose.bbx' found.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/biblatex/bbx/verbose.bbx
+File: verbose.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'authortitle'...
+Package biblatex Info: ... file 'authortitle.bbx' found.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/biblatex/bbx/authortitle.bbx
+File: authortitle.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count443
+\c@bbx:relatedtotal=\count444
+)))
+Package biblatex Info: Trying to load citation style 'verbose'...
+Package biblatex Info: ... file 'verbose.cbx' found.
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/biblatex/cbx/verbose.cbx
+File: verbose.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2025-01-18 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
+))
+
+Package biblatex Warning: '\DeclareSortingScheme' is deprecated.
+(biblatex)                Please use '\DeclareSortingTemplate'.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count445
+\Gm@cntv=\count446
+\c@Gm@tempcnt=\count447
+\Gm@bindingoffset=\dimen269
+\Gm@wd@mp=\dimen270
+\Gm@odd@mp=\dimen271
+\Gm@even@mp=\dimen272
+\Gm@layoutwidth=\dimen273
+\Gm@layoutheight=\dimen274
+\Gm@layouthoffset=\dimen275
+\Gm@layoutvoffset=\dimen276
+\Gm@dimlist=\toks36
+))
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.
+sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/gettitlestring/gettitlestr
+ing.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count448
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen277
+\Hy@linkcounter=\count449
+\Hy@pagecounter=\count450
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count451
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count452
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen278
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count453
+\Field@Width=\dimen279
+\Fld@charsize=\dimen280
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+ (/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count454
+\c@Item=\count455
+\c@Hfootnote=\count456
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2024-11-05 v7.01l Hyperref driver for XeTeX
+\pdfm@box=\box68
+\c@Hy@AnnotLevel=\count457
+\HyField@AnnotCount=\count458
+\Fld@listcount=\count459
+\c@bookmark@seq@number=\count460
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/rerunfilecheck/rerunfilechec
+k.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/uniquecounter/uniquecounte
+r.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip76
+) (/usr/local/texlive/2025basic/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
+\AP@output=\toks37
+\AP@partial=\box69
+\AP@footins=\box70
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/smartdiagram/smartdiagram.st
+y
+Package: smartdiagram 2016/12/23 v0.3b Automatic creation of smart diagrams fro
+m lists of items.
+ (/usr/local/texlive/2025basic/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/xstring/xstring.tex
+\xs_counta=\count461
+\xs_countb=\count462
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@layerbox@background=\box71
+\pgf@layerboxsaved@background=\box72
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/libraries/pgflibraryfa
+dings.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/libraries/shapes/pgfli
+braryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/libraries/shapes/pgfli
+braryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+\pgf@layerbox@smart diagram arrow back=\box73
+\pgf@layerboxsaved@smart diagram arrow back=\box74
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/smartdiagram/smartdiagramlib
+rarycore.definitions.code.tex)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/smartdiagram/smartdiagramlib
+rarycore.styles.code.tex)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/smartdiagram/smartdiagramlib
+rarycore.commands.code.tex))
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/metalogo/metalogo.sty
+Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+\xl@everylogo=\toks38
+\xl@@everylogo=\toks39
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks40
+\inpenc@posthook=\toks41
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibrarymindmap.code.tex
+File: tikzlibrarymindmap.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibrarytrees.code.tex
+File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibrarydecorations.code.tex
+(/usr/local/texlive/2025basic/texmf-dist/tex/generic/pgf/modules/pgfmoduledecor
+ations.code.tex
+\pgfdecoratedcompleteddistance=\dimen281
+\pgfdecoratedremainingdistance=\dimen282
+\pgfdecoratedinputsegmentcompleteddistance=\dimen283
+\pgfdecoratedinputsegmentremainingdistance=\dimen284
+\pgf@decorate@distancetomove=\dimen285
+\pgf@decorate@repeatstate=\count463
+\pgfdecorationsegmentamplitude=\dimen286
+\pgfdecorationsegmentlength=\dimen287
+)
+\tikz@lib@dec@box=\box75
+))
+Package hyperref Info: Option `colorlinks' set `false' on input line 27.
+
+
+Package biblatex Warning: Load 'inputenc' before biblatex.
+
+\@quotelevel=\count464
+\@quotereset=\count465
+(./cv.aux)
+\openout1 = `cv.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 53.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 53.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 53.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 53.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/texgyreheros-regular.otf(4)/m/n --> TU/latinmodern-m
+ath.otf(1)/m/n on input line 53.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/texgyreheros-regular.otf(4)/b/n --> TU/latinmodern-m
+ath.otf(1)/b/n on input line 53.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 53.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
+t line 53.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 53.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
+t line 53.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 5
+3.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
+t line 53.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 53.
+
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
+t line 53.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/local/texlive/2025basic/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `cv.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'cv.bbl' not found.
+
+No file cv.bbl.
+Package biblatex Info: Reference section=0 on input line 53.
+Package biblatex Info: Reference segment=0 on input line 53.
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(173.56198pt, 398.0539pt, 42.67912pt)
+* v-part:(T,H,B)=(56.9055pt, 666.9326pt, 71.13188pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=398.0539pt
+* \textheight=666.9326pt
+* \oddsidemargin=101.29199pt
+* \evensidemargin=101.29199pt
+* \topmargin=-15.36449pt
+* \headheight=0.0pt
+* \headsep=0.0pt
+* \topskip=10.0pt
+* \footskip=0.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring OFF on input line 53.
+(./cv.out) (./cv.out)
+\@outlinefile=\write5
+\openout5 = `cv.out'.
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00107pt on input line 60.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 60.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 60.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 60.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 60.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 60.
+File: img/mathieu.png Graphic file (type bmp)
+<img/mathieu.png>
+
+Overfull \hbox (9.76428pt too wide) in paragraph at lines 64--64
+ []
+ []
+
+
+Overfull \hbox (50.71967pt too wide) in paragraph at lines 92--92
+ [][]
+ []
+
+
+Overfull \hbox (42.70491pt too wide) in paragraph at lines 101--101
+ [][]
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 123--123
+[][]\TU/texgyreheros-bold.otf(0)/m/n/10 Galvanized[] \TU/texgyreheros-regular.o
+tf(1)/m/n/10 my team into adopting new technologies, like Elastic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--166
+
+ []
+
+
+
+[1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 167--175
+
+ []
+
+File: img/5stars.png Graphic file (type bmp)
+<img/5stars.png>
+File: img/4stars.png Graphic file (type bmp)
+<img/4stars.png>
+
+Underfull \hbox (badness 1648) in paragraph at lines 200--200
+\TU/texgyreheros-regular.otf(1)/m/n/10 online bots to load test SSX’s multiplay
+er server; showcased at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--229
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--238
+
+ []
+
+
+
+[2] (./cv.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `cv.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                cv
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'cv.run.xml'.
+\openout1 = `cv.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 18895 strings out of 475366
- 406596 string characters out of 5762340
- 825393 words of memory out of 5000000
- 41617 multiletter control sequences out of 15000+600000
- 558965 words of font info for 52 fonts, out of 8000000 for 9000
+ 35689 strings out of 475366
+ 731914 string characters out of 5762340
+ 1723713 words of memory out of 5000000
+ 58145 multiletter control sequences out of 15000+600000
+ 560249 words of font info for 83 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 117i,0n,121p,518b,268s stack positions out of 10000i,1000n,20000p,200000b,200000s
-No pages of output.
+ 117i,9n,121p,691b,913s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on cv.pdf (2 pages).
