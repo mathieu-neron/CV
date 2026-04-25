@@ -1,0 +1,208 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%
+% cv_v2.tex — Mathieu Neron — v2 rewrite
+% Template: Awesome-CV (posquit0, LPPL-1.3c)
+
+%-------------------------------------------------------------------------------
+% CONFIG
+%-------------------------------------------------------------------------------
+\documentclass[11pt, letterpaper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.5cm, footskip=.5cm}
+
+\colorlet{awesome}{awesome-skyblue}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+% PERSONAL INFO
+%-------------------------------------------------------------------------------
+\name{Mathieu}{Néron}
+\position{Staff Software Engineer}
+\address{San Francisco, CA}
+\mobile{(628) 358-8813}
+\email{mathieu.neron.ing@gmail.com}
+\github{mathieu-neron}
+\linkedin{mathieu-néron-b4419522}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader[C]
+
+%-------------------------------------------------------------------------------
+% SUMMARY
+%-------------------------------------------------------------------------------
+\cvsection{Summary}
+\begin{cvparagraph}
+Software engineer with 15+ years shipping at scale. Currently building fraud-risk infrastructure at Highnote, processing \textbf{3M+ monthly card transactions} ($\sim$\textbf{\$350M+} in monthly settlement volume); previously Senior $\rightarrow$ LMTS at Tableau, contributing to the server stack integrated with Salesforce Einstein --- \textbf{80B+ AI-powered predictions per day}. Background spans fintech, data visualization, and e-signature; actively exploring applied AI/ML through side projects, with recent focus on distributed-systems architecture (DDIA, Kafka, batch / stream processing).
+\end{cvparagraph}
+
+%-------------------------------------------------------------------------------
+% EXPERIENCE
+%-------------------------------------------------------------------------------
+\cvsection{Experience}
+\begin{cventries}
+
+  \cventry
+    {Senior Software Engineer}
+    {Highnote}
+    {San Francisco, CA}
+    {Aug. 2023 -- Present}
+    {
+      \begin{cvitems}
+        \item {\textit{Java, TypeScript, GraphQL, GCP, Temporal, Elasticsearch, Python, ANTLR}}
+        \item {Designed and shipped a customizable \textbf{geofencing rule} now deployed across \textbf{7 subscribers} (19 rule instances) on Highnote's rule engine; mid-2025 tuning lifted true-positive rate \textbf{3--4$\times$} on the Fleet-program enforcement path.}
+        \item {Led migration of the core SMS stack from AWS Pinpoint to \textbf{Twilio} and built the platform's first \textbf{bi-directional SMS fraud-detection workflow} on \textbf{Temporal} --- a real-time-risk differentiator anchoring a flagship enterprise rollout and central to the platform's pitch to new fraud-sensitive subscribers.}
+        \item {Drove adoption of \textbf{Temporal} (durable workflows) and \textbf{Elasticsearch} as first production use cases at Highnote; both now standard across multiple teams.}
+        \item {Extended the \textbf{ANTLR grammar} powering Highnote's natural-language query layer with fuzzy / typo-tolerant search.}
+        \item {Shipped rule removal and archival for the fraud-risk platform, unblocking the operational risk team from a backlog of stale rules.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Senior Software Engineer $\rightarrow$ LMTS}
+    {Tableau (Salesforce)}
+    {Palo Alto, CA}
+    {Jun. 2019 -- Jul. 2023}
+    {
+      \begin{cvitems}
+        \item {\textit{React, Redux, TypeScript, Java, C++, Qt} \quad---\quad Promoted to Lead Member of Technical Staff in 2020.}
+        \item {Onboarded a new AI-predictive-model content type in Tableau Server for \textbf{Salesforce Einstein Discovery} integration --- contributing to the server stack delivering \textbf{80B+ AI-powered predictions per day}.}
+        \item {Drove the \textbf{Object Graph} view in Tableau's Data pane from beta to GA --- the default relationships editor in Tableau's multi-table data model, part of the authoring stack behind Tableau Public's \textbf{7M+ vizzes} from \textbf{3M+ creators}; shipped transition animations, tooltips, sorting, and re-rooting.}
+        \item {Contributed to the \textbf{Data Preview Area} hybridization --- metadata grid plus embedded relationship editor in a single surface.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Java Developer}
+    {Paysafe}
+    {Montréal, Canada}
+    {2016 -- 2019}
+    {
+      \begin{cvitems}
+        \item {\textit{Angular 2+, TypeScript, Java, Spring, Oracle}}
+        \item {Shipped the new Angular 2+ \textbf{Merchant Portal} frontend from greenfield.}
+        \item {\textbf{Cut frontend test runtime 6$\times$} by migrating from PhantomJS to Nightmare.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Java Developer}
+    {eSignLive}
+    {Montréal, Canada}
+    {2014 -- 2016}
+    {
+      \begin{cvitems}
+        \item {\textit{Java, Spring, Guava, AWS, MySQL, Jenkins}}
+        \item {\textbf{Cut Windows document converter downtime by 50\%}.}
+        \item {Integrated Equifax, Twilio, PDFBox, and Google Noto Fonts.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Application Developer}
+    {Avanade}
+    {Montréal, Canada}
+    {2012 -- 2014}
+    {
+      \begin{cvitems}
+        \item {Enterprise web engineering for Canadian National Railway (\textit{www.cn.ca} redesign on Sitecore / ASP.NET) and Hydro-Québec (internal time-tracking app; led frontend-stack selection --- SAPUI5 + Infragistics).}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+\newpage
+
+%-------------------------------------------------------------------------------
+% PROJECTS
+%-------------------------------------------------------------------------------
+\cvsection{Projects}
+\begin{cventries}
+
+  \cventry
+    {RealTube}
+    {\href{https://github.com/mathieu-neron/RealTube}{github.com/mathieu-neron/RealTube}}
+    {Personal project}
+    {2026}
+    {
+      \begin{cvitems}
+        \item {Browser extension (Chrome/Firefox, Manifest V3) for crowdsourced detection and hiding of AI-generated YouTube content across feed, search, recommendations, and Shorts.}
+        \item {Architected a dual-backend split --- \textbf{Go} (Fiber v3) on the hot path, \textbf{Python + FastAPI} for ML-ready services --- to isolate low-latency endpoints from future inference workloads; \textbf{TypeScript + React 19} extension, PostgreSQL + Redis + Docker + Prometheus.}
+        \item {Privacy-engineered hash-prefix lookup (5000$\times$ SHA256); contract-tested API, e2e tests, 10 architecture design docs.}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+% SKILLS
+%-------------------------------------------------------------------------------
+\cvsection{Skills}
+\begin{cvskills}
+  \cvskill
+    {Languages}
+    {Java, TypeScript/JavaScript, Python, Go, C/C++, C\#}
+  \cvskill
+    {Frameworks}
+    {Spring, Temporal, Node.js, React/Redux, Angular, GraphQL, REST, Qt, .NET, ANTLR}
+  \cvskill
+    {Platforms}
+    {GCP, AWS, PostgreSQL, Elasticsearch, Redis, Oracle, MySQL, Docker}
+  \cvskill
+    {Spoken}
+    {French (native), English (fluent)}
+\end{cvskills}
+
+%-------------------------------------------------------------------------------
+% EDUCATION
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+\begin{cventries}
+
+  \cventry
+    {B.Eng., Computer Engineering}
+    {Université de Sherbrooke}
+    {Sherbrooke, Canada}
+    {2007 -- 2011}
+    {
+      \begin{cvitems}
+        \item {Specialization in Software Engineering and Artificial Intelligence.}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+% EARLY WORK
+%-------------------------------------------------------------------------------
+\cvsection{Internships}
+\begin{cventries}
+
+  \cventry
+    {Software Engineer Intern}
+    {Electronic Arts Canada}
+    {Burnaby, Canada}
+    {Summer 2011}
+    {
+      \begin{cvitems}
+        \item {Built a distributed C++ / C\# load-test harness running thousands of concurrent bots against \textbf{SSX}'s multiplayer server; used internally and demoed at \textbf{Gamescom 2011}.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Earlier Internships}
+    {Autodesk \quad\textbar\quad Ubisoft \quad\textbar\quad Lockheed Martin}
+    {Canada}
+    {2008 -- 2010}
+    {
+      \begin{cvitems}
+        \item {\textbf{Autodesk} (2010) --- animation plug-in inside Maya (C++ / Qt). \textbf{Ubisoft} (2009) --- QA automation (C\# / .NET). \textbf{Lockheed Martin} (2008) --- software evaluation.}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+\end{document}
