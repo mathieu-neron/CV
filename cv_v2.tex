@@ -19,7 +19,7 @@
 % PERSONAL INFO
 %-------------------------------------------------------------------------------
 \name{Mathieu}{Néron}
-\position{Staff Software Engineer}
+\position{Software Engineer}
 \address{San Francisco, CA}
 \mobile{(628) 358-8813}
 \email{mathieu.neron.ing@gmail.com}
@@ -36,7 +36,7 @@
 %-------------------------------------------------------------------------------
 \cvsection{Summary}
 \begin{cvparagraph}
-Software engineer with 15+ years shipping at scale. Currently building fraud-risk infrastructure at Highnote, processing \textbf{3M+ monthly card transactions} ($\sim$\textbf{\$350M+} in monthly settlement volume); previously Senior $\rightarrow$ LMTS at Tableau, contributing to the server stack integrated with Salesforce Einstein --- \textbf{80B+ AI-powered predictions per day}. Background spans fintech, data visualization, and e-signature; actively exploring applied AI/ML through side projects, with recent focus on distributed-systems architecture (DDIA, Kafka, batch / stream processing).
+Software engineer with 15+ years shipping at scale. Currently building fraud-risk infrastructure at Highnote, processing \textbf{3M+ monthly card transactions} ($\sim$\textbf{\$350M+} in monthly settlement volume); previously Senior $\rightarrow$ LMTS at Tableau, building authoring and server features used by \textbf{87K+ customer companies} and \textbf{3M+ Tableau Public creators}. Background spans fintech, data visualization, and e-signature; actively exploring applied AI/ML through side projects, with recent focus on distributed-systems architecture (DDIA, Kafka, batch / stream processing).
 \end{cvparagraph}
 
 %-------------------------------------------------------------------------------
@@ -52,12 +52,12 @@ Software engineer with 15+ years shipping at scale. Currently building fraud-ris
     {Aug. 2023 -- Present}
     {
       \begin{cvitems}
-        \item {\textit{Java, TypeScript, GraphQL, GCP, Temporal, Elasticsearch, Python, ANTLR}}
+        \item {\textit{Java, TypeScript, GraphQL, GCP, Spanner, BigQuery, Temporal, Elasticsearch, Python, ANTLR}}
+        \item {Owned \textbf{OFAC sanctions screening} on Highnote's synchronous money-movement critical path (Visa Direct / RTP / ACH); landed a three-layer optimization --- in-memory early-exit, False/True positive lookups deferred to candidate matches, Spanner bounded-staleness reads --- to hit a \textbf{P99 $\leq$ 100\,ms} SLA for a major customer migration; \textbf{99.996\%} of $\sim$244K monthly screenings now bypass the database entirely.}
         \item {Designed and shipped a customizable \textbf{geofencing rule} now deployed across \textbf{7 subscribers} (19 rule instances) on Highnote's rule engine; mid-2025 tuning lifted true-positive rate \textbf{3--4$\times$} on the Fleet-program enforcement path.}
         \item {Led migration of the core SMS stack from AWS Pinpoint to \textbf{Twilio} and built the platform's first \textbf{bi-directional SMS fraud-detection workflow} on \textbf{Temporal} --- a real-time-risk differentiator anchoring a flagship enterprise rollout and central to the platform's pitch to new fraud-sensitive subscribers.}
         \item {Drove adoption of \textbf{Temporal} (durable workflows) and \textbf{Elasticsearch} as first production use cases at Highnote; both now standard across multiple teams.}
         \item {Extended the \textbf{ANTLR grammar} powering Highnote's natural-language query layer with fuzzy / typo-tolerant search.}
-        \item {Shipped rule removal and archival for the fraud-risk platform, unblocking the operational risk team from a backlog of stale rules.}
       \end{cvitems}
     }
 
@@ -131,7 +131,7 @@ Software engineer with 15+ years shipping at scale. Currently building fraud-ris
       \begin{cvitems}
         \item {Browser extension (Chrome/Firefox, Manifest V3) for crowdsourced detection and hiding of AI-generated YouTube content across feed, search, recommendations, and Shorts.}
         \item {Architected a dual-backend split --- \textbf{Go} (Fiber v3) on the hot path, \textbf{Python + FastAPI} for ML-ready services --- to isolate low-latency endpoints from future inference workloads; \textbf{TypeScript + React 19} extension, PostgreSQL + Redis + Docker + Prometheus.}
-        \item {Privacy-engineered hash-prefix lookup (5000$\times$ SHA256); contract-tested API, e2e tests, 10 architecture design docs.}
+        \item {Privacy-engineered hash-prefix lookup with \textbf{5000-round SHA256 stretching} to harden against brute-force reverse lookups; contract-tested API, e2e tests, 10 architecture design docs.}
       \end{cvitems}
     }
 
@@ -150,7 +150,7 @@ Software engineer with 15+ years shipping at scale. Currently building fraud-ris
     {Spring, Temporal, Node.js, React/Redux, Angular, GraphQL, REST, Qt, .NET, ANTLR}
   \cvskill
     {Platforms}
-    {GCP, AWS, PostgreSQL, Elasticsearch, Redis, Oracle, MySQL, Docker}
+    {GCP, AWS, Spanner, BigQuery, PostgreSQL, Elasticsearch, Redis, Oracle, MySQL, Docker}
   \cvskill
     {Spoken}
     {French (native), English (fluent)}
