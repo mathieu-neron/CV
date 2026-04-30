@@ -36,7 +36,7 @@
 %-------------------------------------------------------------------------------
 \cvsection{Summary}
 \begin{cvparagraph}
-Software engineer with 15+ years shipping at scale. Currently building fraud-risk infrastructure at Highnote, processing \textbf{3M+ monthly card transactions} ($\sim$\textbf{\$350M+} in monthly settlement volume); previously Senior $\rightarrow$ LMTS at Tableau, building authoring and server features used by \textbf{87K+ customer companies} and \textbf{3M+ Tableau Public creators}. Background spans fintech, data visualization, and e-signature; actively exploring applied AI/ML through side projects, with recent focus on distributed-systems architecture (DDIA, Kafka, batch / stream processing).
+Software engineer with 15+ years shipping at scale. Currently building fraud-risk infrastructure at Highnote, processing \textbf{3M+ monthly card transactions} ($\sim$\textbf{\$350M+} in monthly settlement volume); previously Senior $\rightarrow$ LMTS at Tableau, building authoring and server features used by \textbf{87K+ customer companies} and \textbf{3M+ Tableau Public creators}. Background spans fintech, data visualization, and e-signature; building applied-ML fluency hands-on (\textbf{Medea}: multi-modal PyTorch classifier with RAG explanation, F1 0.90 on channel-grouped CV).
 \end{cvparagraph}
 
 %-------------------------------------------------------------------------------
@@ -123,15 +123,28 @@ Software engineer with 15+ years shipping at scale. Currently building fraud-ris
 \begin{cventries}
 
   \cventry
-    {RealTube}
+    {RealTube --- crowdsourced AI-generated YouTube content filter}
     {\href{https://github.com/mathieu-neron/RealTube}{github.com/mathieu-neron/RealTube}}
-    {Personal project}
+    {Personal learning project}
     {2026}
     {
       \begin{cvitems}
-        \item {Browser extension (Chrome/Firefox, Manifest V3) for crowdsourced detection and hiding of AI-generated YouTube content across feed, search, recommendations, and Shorts.}
-        \item {Architected a dual-backend split --- \textbf{Go} (Fiber v3) on the hot path, \textbf{Python + FastAPI} for ML-ready services --- to isolate low-latency endpoints from future inference workloads; \textbf{TypeScript + React 19} extension, PostgreSQL + Redis + Docker + Prometheus.}
-        \item {Privacy-engineered hash-prefix lookup with \textbf{5000-round SHA256 stretching} to harden against brute-force reverse lookups; contract-tested API, e2e tests, 10 architecture design docs.}
+        \item {Full-stack browser extension (Chrome/Firefox, Manifest V3) for crowdsourced flagging and hiding of AI-generated YouTube content across feed, search, recommendations, and Shorts.}
+        \item {Built as a hands-on Go + Python learning exercise: \textbf{Go} (Fiber v3) on the low-latency lookup path, \textbf{Python + FastAPI} for the inference-adjacent services, \textbf{TypeScript + React 19} extension, PostgreSQL + Redis + Docker + Prometheus.}
+        \item {Privacy-engineered URL lookup using a \textbf{k-anonymity hash-prefix} scheme (HIBP-style) so the backend never sees full URLs in plaintext; contract-tested API and end-to-end test coverage.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Medea --- multi-modal AI-generated YouTube classifier}
+    {\href{https://github.com/mathieu-neron/medea}{github.com/mathieu-neron/medea}}
+    {Personal learning project (natural follow-up to RealTube)}
+    {2026}
+    {
+      \begin{cvitems}
+        \item {Built an end-to-end ML pipeline to learn the full applied-ML stack hands-on: yt-dlp ingest $\rightarrow$ four-modality feature extraction (\textbf{CLIP ViT-B/32} visual, \textbf{faster-whisper} + \textbf{wav2vec2} anti-spoofing audio, \textbf{MiniLM} text, handcrafted scalars) $\rightarrow$ \textbf{Chroma} vector DB $\rightarrow$ small \textbf{PyTorch} MLP head $\rightarrow$ FastAPI server with retrieval-augmented \textbf{local-LLM rationale} via Ollama.}
+        \item {Used \textbf{channel-grouped LeaveOneGroupOut CV} (10 folds, $\sim$94-clip dataset) after UMAP showed channels as 10 distinct clusters --- random video-level splits would have memorized channel identity, not ``AI-ness.'' Final MLP \textbf{F1 0.90} / \textbf{ROC-AUC 0.96} on this honest split.}
+        \item {Diagnosed a silent-audio failure mode (anti-spoof model misfires on no-speech clips) and fixed it with \texttt{has\_speech} $\times$ \texttt{ai\_voice\_prob} interaction features (F1 0.87 $\rightarrow$ 0.90); added a \textbf{temporal prior cap} for pre-2017 uploads to bound MLP extrapolation outside the training cone.}
       \end{cvitems}
     }
 
@@ -151,6 +164,9 @@ Software engineer with 15+ years shipping at scale. Currently building fraud-ris
   \cvskill
     {Platforms}
     {GCP, AWS, Spanner, BigQuery, PostgreSQL, Elasticsearch, Redis, Oracle, MySQL, Docker}
+  \cvskill
+    {ML / AI}
+    {PyTorch, Hugging Face Transformers, sentence-transformers, CLIP, Whisper, Chroma, MLflow, Ollama, RAG}
   \cvskill
     {Spoken}
     {French (native), English (fluent)}
