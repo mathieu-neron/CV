@@ -19,15 +19,15 @@
 % PERSONAL INFO
 %-------------------------------------------------------------------------------
 \name{Mathieu}{Néron}
-\position{Software Engineer}
+\position{Staff Software Engineer}
 \address{San Francisco, CA}
 \mobile{(628) 358-8813}
 \email{mathieu.neron.ing@gmail.com}
 \linkedin{mathieu-néron-b4419522}
 \extrainfo{%
-  \href{https://github.com/mathieu-neron}{\faAlt{GitHub (personal): @mathieu-neron}{\faSquareGithub}{mathieu-neron}}%
+  \href{https://github.com/mathieu-neron}{\faAlt{GitHub: @mathieu-neron}{\faSquareGithub}{mathieu-neron}}%
   \acvHeaderSocialSep%
-  \href{https://github.com/mneron-highnote}{\faAlt{GitHub (work): @mneron-highnote}{\faSquareGithub}{mneron-highnote (work)}}%
+  \href{https://github.com/mneron-highnote}{\faAlt{GitHub: @mneron-highnote}{\faSquareGithub}{mneron-highnote}}%
 }
 
 %-------------------------------------------------------------------------------
@@ -40,7 +40,7 @@
 %-------------------------------------------------------------------------------
 \cvsection{Summary}
 \begin{cvparagraph}
-Software engineer with 15+ years shipping at scale. Currently building fraud-risk infrastructure at Highnote, processing \textbf{3M+ monthly card transactions} ($\sim$\textbf{\$350M+} in monthly settlement volume) across \textbf{$\sim$45 enterprise programs} and \textbf{1.2M+ cardholders}; previously Senior $\rightarrow$ LMTS at Tableau, building authoring and server features used by \textbf{87K+ customer companies} and \textbf{3M+ Tableau Public creators}. Background spans fintech, data visualization, and e-signature; building applied-ML fluency hands-on (\textbf{Medea}: multi-modal PyTorch classifier with RAG explanation, F1 0.90 on channel-grouped CV).
+Staff software engineer at CodeRabbit, with 15+ years in production systems. At Highnote, I owned risk and sanctions-compliance systems for a card platform that settles \textbf{\$650M+ a month} over \textbf{8M+ card transactions}, \textbf{50+ programs} and \textbf{1.6M active cards}. Before that, I was Senior $\rightarrow$ LMTS at Tableau, on authoring and server features used by \textbf{87K+ customer companies} and \textbf{3M+ Tableau Public creators}. I also build applied-ML projects (\textbf{Medea}: a multi-modal PyTorch classifier with RAG explanations, F1 0.90 on channel-grouped CV).
 \end{cvparagraph}
 
 %-------------------------------------------------------------------------------
@@ -50,19 +50,27 @@ Software engineer with 15+ years shipping at scale. Currently building fraud-ris
 \begin{cventries}
 
   \cventry
+    {Staff Software Engineer}
+    {CodeRabbit}
+    {San Francisco, CA}
+    {Nov. 2026 -- Present}
+    {}
+
+  \cventry
     {Senior Software Engineer}
     {Highnote}
     {San Francisco, CA}
-    {Aug. 2023 -- Present}
+    {Jul. 2023 -- Nov. 2026}
     {
       \begin{cvitems}
-        \item {\textit{Java, TypeScript, GraphQL, GCP, Spanner, BigQuery, Temporal, Elasticsearch, Python, ANTLR}}
-        \item {Owned \textbf{OFAC sanctions screening} on Highnote's synchronous money-movement critical path (Visa Direct / RTP / ACH); landed a three-layer optimization --- in-memory early-exit, False/True positive lookups deferred to candidate matches, Spanner bounded-staleness reads --- to hit a \textbf{P99 $\leq$ 100\,ms} SLA powering \textbf{Ferry's launch as Highnote's first Instant Payments subscriber} (Dec 2025); \textbf{99.996\%} of $\sim$244K monthly screenings now bypass the database entirely.}
-        \item {Designed and shipped a customizable \textbf{geofencing rule} now deployed across \textbf{7 subscribers} (19 rule instances) on Highnote's rule engine; mid-2025 tuning lifted true-positive rate \textbf{3--4$\times$} on the Fleet-program enforcement path.}
-        \item {Built the \textbf{real-time velocity feature store} powering Highnote's fraud rule engine --- intra-hour merchant/BIN/card auth-velocity counters (count + amount) written on the synchronous auth path and served to rule evaluation via a CQRS read API; collapsed the Redis read from N round-trips to \textbf{2 concurrent MGETs ($\sim$1 RTT)}, engineered to hold \textbf{P95 $<$ 100\,ms under load} as the program scales.}
-        \item {Led migration of the core SMS stack from AWS Pinpoint to \textbf{Twilio} and built the platform's first \textbf{bi-directional SMS fraud-detection workflow} on \textbf{Temporal} --- conversation state lives in Temporal's durable workflows, so the SMS layer uses Twilio's lightweight Messaging API rather than the heavier and pricier Conversations API; anchors a flagship enterprise rollout.}
-        \item {Drove adoption of \textbf{Temporal} (durable workflows) and \textbf{Elasticsearch} as first production use cases at Highnote; both now standard across multiple teams.}
-        \item {Extended the \textbf{ANTLR grammar} powering Highnote's natural-language query layer with fuzzy / typo-tolerant search.}
+        \item {\textit{Java, Spring, GraphQL, gRPC, GCP (Spanner, BigQuery, Pub/Sub), Temporal, Elasticsearch, Redis, Spring AI}}
+        \item {Owned \textbf{sanctions screening} (OFAC, EU/UN) end to end and built its matching engine (phonetic index, Jaro-Winkler scoring). Moved the true/false-positive lookup off the money-movement hot path, which replaced a Redis cache I had built. Cut daily database writes by \textbf{76\%} and made 12-hour runs resume from checkpoints.}
+        \item {Sole engineer on \textbf{FinCEN 314(a)} screening, the statutory law-enforcement search that partner banks must answer. Designed the Temporal pipeline from FTPS ingest to encrypted delivery of results. Live since Sep 2024 against \textbf{4.4M+ account holders}; I made it generic and onboarded a second bank.}
+        \item {Built the \textbf{money-movement risk feature store}: BigQuery features materialized into Redis, plus real-time velocity counters for push and pull card transfers. Warm reads take \textbf{4--5\,ms} against a 50\,ms budget, and fraud rules for five programs run on it.}
+        \item {Led the security design to move \textbf{34 services} from a custom LLM gateway to \textbf{Spring AI 2.0}. Wrote a 7-threat model for Security and Infra, then shipped the foundation behind a two-layer kill switch, with fail-closed PII scrubbing and a tenant-scoped response cache. The proof of concept removed $\sim$2,000 lines.}
+        \item {Built \textbf{two-way SMS fraud verification} on \textbf{Temporal} and \textbf{Twilio}, so cardholders can confirm or deny a flagged transaction. Chose Twilio's Messaging API over its Conversations API on cost, because durable workflows already hold the conversation state. Live since Jan 2026; the CTO announced it publicly.}
+        \item {Built an \textbf{impossible-travel fraud rule}: haversine distance between geocoded card-present transactions inside a time window. Live for \textbf{10 customers}.}
+        \item {Brought \textbf{Temporal} and \textbf{Elasticsearch} into the risk domain, where both are now standard. Wrote design guides that other engineers built on, closed a cross-bank data exposure in the bank portal, and built AI investigation and code-review tooling that the team adopted.}
       \end{cvitems}
     }
 
@@ -87,7 +95,6 @@ Software engineer with 15+ years shipping at scale. Currently building fraud-ris
     {2016 -- 2019}
     {
       \begin{cvitems}
-        \item {\textit{Angular 2+, TypeScript, Java, Spring, Oracle}}
         \item {Shipped the new Angular 2+ \textbf{Merchant Portal} frontend from greenfield.}
         \item {\textbf{Cut frontend test runtime 6$\times$} by migrating from PhantomJS to Nightmare.}
       \end{cvitems}
@@ -100,7 +107,6 @@ Software engineer with 15+ years shipping at scale. Currently building fraud-ris
     {2014 -- 2016}
     {
       \begin{cvitems}
-        \item {\textit{Java, Spring, Guava, AWS, MySQL, Jenkins}}
         \item {\textbf{Cut Windows document converter downtime by 50\%}.}
         \item {Integrated Equifax, Twilio, PDFBox, and Google Noto Fonts.}
       \end{cvitems}
@@ -113,7 +119,7 @@ Software engineer with 15+ years shipping at scale. Currently building fraud-ris
     {2012 -- 2014}
     {
       \begin{cvitems}
-        \item {Enterprise web engineering for Canadian National Railway (\textit{www.cn.ca} redesign on Sitecore / ASP.NET) and Hydro-Québec (internal time-tracking app; led frontend-stack selection --- SAPUI5 + Infragistics).}
+        \item {Web engineering for Canadian National Railway (Sitecore / ASP.NET) and Hydro-Québec (SAPUI5).}
       \end{cvitems}
     }
 
@@ -165,13 +171,16 @@ Software engineer with 15+ years shipping at scale. Currently building fraud-ris
     {Java, TypeScript/JavaScript, Python, Go, C/C++, C\#}
   \cvskill
     {Frameworks}
-    {Spring, Temporal, Node.js, React/Redux, Angular, GraphQL, REST, Qt, .NET, ANTLR}
+    {Spring, Spring AI, Temporal, gRPC/Protobuf, GraphQL, React/Redux, Angular, Node.js, Qt, .NET, ANTLR}
   \cvskill
     {Platforms}
-    {GCP, AWS, Spanner, BigQuery, PostgreSQL, Elasticsearch, Redis, Oracle, MySQL, Docker}
+    {GCP (Spanner, BigQuery, Pub/Sub), AWS, Elasticsearch, Redis, PostgreSQL, Oracle, MySQL, Docker, Kubernetes, Terraform, Bazel}
   \cvskill
     {ML / AI}
-    {PyTorch, Hugging Face Transformers, sentence-transformers, CLIP, Whisper, Chroma, MLflow, Ollama, RAG}
+    {PyTorch, Hugging Face Transformers, sentence-transformers, CLIP, Whisper, Chroma, MLflow, Ollama, RAG, Vertex AI}
+  \cvskill
+    {Domain}
+    {Sanctions and AML (OFAC, FinCEN 314(a)), card fraud risk, ACH and instant payments}
   \cvskill
     {Spoken}
     {French (native), English (fluent)}
